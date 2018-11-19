@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "choice:main.c">
+         <PersistentStrings>
+            <PersistentString
+               value = "mine[3]">
+            </PersistentString>
+            <PersistentString
+               value = "mine[4]">
+            </PersistentString>
+            <PersistentString
+               value = "mine[0]">
+            </PersistentString>
+            <PersistentString
+               value = "mine[5]">
+            </PersistentString>
+            <PersistentString
+               value = "mine[1]">
+            </PersistentString>
+            <PersistentString
+               value = "mine[6]">
+            </PersistentString>
+            <PersistentString
+               value = "mine[2]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

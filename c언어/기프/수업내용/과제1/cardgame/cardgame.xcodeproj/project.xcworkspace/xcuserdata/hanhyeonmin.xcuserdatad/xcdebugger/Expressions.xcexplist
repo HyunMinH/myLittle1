@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "IfStrt:main.c">
+      </ContextState>
+      <ContextState
+         contextName = "main:main.c">
+      </ContextState>
+      <ContextState
+         contextName = "findStrt:main.c">
+      </ContextState>
+      <ContextState
+         contextName = "ordify:main.c">
+         <PersistentStrings>
+            <PersistentString
+               value = "temp[1]">
+            </PersistentString>
+            <PersistentString
+               value = "temp[2]">
+            </PersistentString>
+            <PersistentString
+               value = "temp[CARDMAX]">
+            </PersistentString>
+            <PersistentString
+               value = "temp[3]">
+            </PersistentString>
+            <PersistentString
+               value = "temp[0]">
+            </PersistentString>
+            <PersistentString
+               value = "temp[]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "changeCard:main.c">
+      </ContextState>
+      <ContextState
+         contextName = "shuffle:main.c">
+         <PersistentStrings>
+            <PersistentString
+               value = "deck[0]">
+            </PersistentString>
+            <PersistentString
+               value = "deck[21]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

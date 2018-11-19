@@ -1,0 +1,209 @@
+import java.awt.BorderLayout;
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.BorderFactory;
+import javax.swing.ButtonGroup;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JRadioButton;
+import javax.swing.JTextField;
+
+class MyFrame extends JFrame implements ActionListener {
+	// MyFrame 클래스 정의 JFrame으로 부터 상속
+	private int sum, del, type, side,order; // 액션리스너 구현
+	private JButton order1_button, order2_button,cancle_button; // 컴포넌트와 컨테이너 참조변수
+	private JPanel down_panel;
+	private JTextField text;
+
+	WelcomePanel welcom_panel = new WelcomePanel(); // 문구, 타입, 토핑, 크기 패널 생성
+	TypePanel TypePanel = new TypePanel();
+	DelPanel DelPanel = new DelPanel();
+	SidePanel SidePanel = new SidePanel();
+	OrderPanel OrderPanel = new OrderPanel();
+
+	public MyFrame() { // 생성자 정의
+
+		this.setSize(500, 300); // 프레임 크기 정의
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // 종료 설정
+		this.setTitle("피자 주문"); // 타이틀 초기화
+
+		this.order1_button = new JButton("배달"); // 주문 버튼 생성
+		this.order1_button.addActionListener(this); // 이벤트 처리 등록
+		this.order2_button = new JButton("T/O"); 
+		this.order2_button.addActionListener(this);
+		this.cancle_button = new JButton("취소"); // 취소 버튼 생성
+		this.cancle_button.addActionListener(this); // 이벤트 처리 등록
+
+		this.text = new JTextField(); // 텍스트 필드 생성
+		text.setEditable(false); // 수정 불가
+		text.setColumns(6); // 길이 6칸
+
+		down_panel = new JPanel(); // 패널 생성
+		down_panel.add(this.order1_button); // 주문 버튼 취소 버튼 추가
+		down_panel.add(this.order2_button);
+		down_panel.add(this.cancle_button);
+		down_panel.add(this.text); // 텍스트 필드 추가
+		this.setLayout(new BorderLayout()); // 프레임 배치관리자 설정
+
+		this.add(welcom_panel, BorderLayout.NORTH); // 웰컴 패널 북쪽
+		this.add(down_panel, BorderLayout.SOUTH); // 버튼 패널 남쪽
+		this.add(SidePanel, BorderLayout.CENTER); // 사이즈 패널 동쪽
+		this.add(TypePanel, BorderLayout.EAST); // 타입 패널 서쪽
+		this.add(DelPanel, BorderLayout.WEST); // 토핑 패널 중앙
+		
+		this.setVisible(true); // 프레임 화면 표시
+	}
+
+	public void actionPerformed(ActionEvent e) { // 액션이벤트 처리
+		if (e.getSource() == this.order1_button) { // 액션소스 검출 '주문 버튼시
+			sum=type+del+side+2000;
+			this.text.setText("" + sum); // 텍스트 필드 출력
+		}
+		if (e.getSource() == this.order2_button) { // 액션소스 검출 '주문 버튼시
+			sum=type+del+side;
+			this.text.setText("" + sum*0.9); // 텍스트 필드 출력
+		}
+		if (e.getSource() == this.cancle_button) { // 액션 소스가 취소 버튼일 경우
+			type = 0;
+			del = 0;
+			side = 0;
+			sum = 0;
+			this.text.setText("" + sum); // 전부 초기화 후 초기값 출력
+		}
+
+	}
+
+	class WelcomePanel extends JPanel {
+		private JLabel message;
+
+		public WelcomePanel() {// 생성자
+			message = new JLabel("자바 피자");
+			add(message);
+		}
+	}
+
+	class TypePanel extends JPanel {
+		private JRadioButton pspecial, special, original;
+		private ButtonGroup bg;
+
+		public TypePanel() {// 생성자
+			setLayout(new GridLayout(3, 1));
+
+			pspecial = new JRadioButton("Preminum Special(5000원)", true);
+			special = new JRadioButton("Special(3000원)");
+			original = new JRadioButton("Original");
+
+			pspecial.addActionListener(e->{type=5000;});
+			special.addActionListener(e->{type=3000;});
+			original.addActionListener(e->{type=0;});
+			
+			
+			bg = new ButtonGroup();
+			bg.add(pspecial);
+			bg.add(special);
+			bg.add(original);
+
+			setBorder(BorderFactory.createTitledBorder("종류"));// 버튼그룸 정리
+			add(pspecial);
+			add(special);
+			add(original);
+		}
+	}
+
+	class SidePanel extends JPanel {
+		private JRadioButton cola, sprite;
+		private ButtonGroup bg;
+
+		public SidePanel() {
+			setLayout(new GridLayout(2, 1));
+
+			cola = new JRadioButton("Cola(500원)", true);
+			sprite = new JRadioButton("Sprite(700원)");
+
+			cola.addActionListener(e->{side=500;});
+			sprite.addActionListener(e->{side=700;});
+			
+			bg = new ButtonGroup();
+			bg.add(cola);
+			bg.add(sprite);
+			setBorder(BorderFactory.createTitledBorder("크기"));// 버튼그룸 정리
+			add(cola);
+			add(sprite);
+
+		}
+	}
+
+	public class DelPanel extends JPanel  {
+		private JRadioButton combi, vegetarian, garden, meat, sea;
+		private ButtonGroup bg;// 버튼그룹 참조변수
+
+		public DelPanel() {
+			setLayout(new GridLayout(5, 1));
+
+			combi = new JRadioButton("Combination(10,000원)", true);
+			vegetarian = new JRadioButton("Vegetarian(11,000원)");
+			garden = new JRadioButton("Garden(12,000원)");
+			meat = new JRadioButton("Meat Lovers(13,000��)");
+			sea = new JRadioButton("SeaFood(15,000원)");
+
+			combi.addActionListener(e->{del=10000;});
+			vegetarian.addActionListener(e->{del=11000;});
+			garden.addActionListener(e->{del=12000;});
+			meat.addActionListener(e->{del=13000;});
+			sea.addActionListener(e->{del=15000;});
+
+			bg = new ButtonGroup();
+			bg.add(combi);
+			bg.add(vegetarian);
+			bg.add(garden);
+			bg.add(meat);
+			bg.add(sea);
+			// 버튼그룹 정리
+
+			setBorder(BorderFactory.createTitledBorder("맛"));
+
+			add(combi);
+			add(vegetarian);
+			add(garden);
+			add(meat);
+			add(sea);
+		}
+	}
+	
+	class OrderPanel extends JPanel {
+		private JRadioButton delivery, takeout;
+		private ButtonGroup bg;
+
+		public OrderPanel() {// 생성자
+			setLayout(new GridLayout(3, 1));
+
+			delivery = new JRadioButton("Preminum Special(5000원)", true);
+			takeout = new JRadioButton("Special(3000원)");
+		
+			delivery.addActionListener(e->{order=2000;});
+			takeout.addActionListener(e->{order=10;});	
+			
+			bg = new ButtonGroup();
+			bg.add(delivery);
+			bg.add(takeout);
+
+			setBorder(BorderFactory.createTitledBorder("종류"));// 버튼그룸 정리
+			add(delivery);
+			add(takeout);
+		}
+	}
+}
+
+public class PizzaOrder {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		MyFrame mf = new MyFrame();
+	}
+
+}

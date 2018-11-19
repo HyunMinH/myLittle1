@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String args[]){
+		Scanner kbd = new Scanner(System.in);
+		
+		System.out.print("x, y를 입력하세요:");
+		int x = kbd.nextInt();
+		int y = kbd.nextInt();
+		
+		kbd.close();
+		
+		System.out.println(calcNumberOfMovement(x, y, x, 0));
+	}
+	
+	public static int calcNumberOfMovement(int x, int y, int cur, int preDistance){
+		int moveNum, moveMin = 9999;
+		
+		if(cur >= y)	return 9999;
+		else if(cur == y-1) return 1;
+		
+		for(int i = preDistance-1; i<=preDistance+1; i++){
+			if(i > 0){
+				moveNum = calcNumberOfMovement(x, y, cur+i, i);
+			
+				if(moveNum < moveMin)
+					moveMin = moveNum;
+			}
+		}
+		
+		return moveMin+1;
+	}
+}

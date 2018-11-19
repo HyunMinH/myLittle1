@@ -1,0 +1,50 @@
+												 import java.awt.BorderLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+class MyFrame2 extends JFrame implements ActionListener{
+	private JButton comfirm_button, exit_button;
+	private JPanel down_panel;
+	private JLabel message;
+	
+	public MyFrame2()
+	{
+		String txt = MyFrame.text2.getText();
+		int price = MyFrame.getPrice();
+		this.setSize(450, 100); 
+		this.setTitle("알림"); 
+
+		this.setVisible(true); 
+		this.setResizable(false); 
+	
+		this.comfirm_button = new JButton("확인"); 
+		this.comfirm_button.addActionListener(this);
+		this.exit_button = new JButton("닫기");
+		this.exit_button.addActionListener(this); 
+		
+		this.setLayout(new BorderLayout()); 
+		this.add(message, BorderLayout.NORTH);
+		this.add(down_panel, BorderLayout.SOUTH);
+		
+		down_panel.add(this.comfirm_button);
+		down_panel.add(this.exit_button);
+	}
+	
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		if(e.getSource()==this.comfirm_button)
+		{
+			this.setVisible(false);
+		}
+		if(e.getSource()==this.exit_button)
+		{
+			this.setVisible(false);
+		}
+	}
+} 
+		

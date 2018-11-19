@@ -1,0 +1,68 @@
+import java.awt.BorderLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+public class MyFrame extends JFrame implements ActionListener{
+	int sum, temp1, temp2, temp3;
+	private JButton order_button, cancle_button;
+	private JPanel welcom_panel, down_panel;
+	private JTextField text;
+	
+	public MyFrame() {
+		this.setSize(500, 300);
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setTitle("피자 주문");
+		
+		order_button = new JButton("주문");
+		order_button.addActionListener(this);
+		cancle_button = new JButton("취소");
+		cancle_button.addActionListener(this);
+		text = new JTextField(6);
+		text.setEditable(false);
+		
+		down_panel = new JPanel();
+		down_panel.add(order_button);
+		down_panel.add(cancle_button);
+		down_panel.add(text);
+		
+		welcom_panel = new JPanel();
+		JLabel label = new JLabel("자바 피자에 오신 것을 환영합니다.");
+		welcom_panel.add(label);
+		
+		JPanel Sizepanel = new SizePanel(); 
+		JPanel Typepanel = new TypePanel(); 
+		JPanel Toppingpanel = new ToppingPanel(); 
+		
+		add(welcom_panel, BorderLayout.NORTH);
+		add(down_panel, BorderLayout.SOUTH);
+		add(Sizepanel, BorderLayout.CENTER);
+		add(Typepanel, BorderLayout.WEST);
+		add(Toppingpanel, BorderLayout.EAST);
+		setVisible(true);
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		if(e.getSource() == order_button) {
+			temp1 = TypePanel.getTem();
+			temp2 = ToppingPanel.getTem();
+			temp3 = SizePanel.getTem();
+			sum = temp1 + temp2 + temp3;
+			text.setText(""+sum);
+		}
+		if(e.getSource()==this.cancle_button) {
+			temp1 = 0;
+			temp2 = 0;
+			temp3 = 0;
+			sum = 0;
+			text.setText(""+sum);
+		}
+	}
+}

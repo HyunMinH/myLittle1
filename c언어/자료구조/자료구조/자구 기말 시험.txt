@@ -1,0 +1,11 @@
+<필기 시험>
+graph부분
+kruskal',s algorithm
+prim's algorithm
+신장트리(dfn하고 low적는거)
+
+
+hash2번 같은경우는 실기에 나오면 좋겠지
+
+
+dynamic hashing 필기에 100%나옴

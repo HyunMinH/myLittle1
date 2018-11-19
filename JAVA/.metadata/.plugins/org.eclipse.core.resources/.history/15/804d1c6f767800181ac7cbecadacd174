@@ -1,0 +1,77 @@
+												 import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.BorderFactory;
+import javax.swing.ButtonGroup;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JRadioButton;
+import javax.swing.border.Border;
+
+public class TypePanel extends JPanel implements ActionListener{
+    private JRadioButton combo, veget, garden, meat, sea;
+    private static int temp1=10000;
+
+    public TypePanel() {
+    	setLayout(new GridLayout(0,1));
+   
+          combo = new JRadioButton("Combination", true);
+          veget = new JRadioButton("Vegetarian");
+          garden = new JRadioButton("Garden");
+          meat = new JRadioButton("Meat Lovers");
+          sea = new JRadioButton("SeaFood");
+
+          ButtonGroup type = new ButtonGroup();
+          type.add(combo);
+          type.add(veget);
+          type.add(garden);
+          type.add(meat);
+          type.add(sea);
+
+          combo.addActionListener(this);
+          veget.addActionListener(this);
+          garden.addActionListener(this);
+          meat.addActionListener(this);
+          sea.addActionListener(this);
+
+
+          add(combo);
+          add(veget);
+          add(garden);
+          add(meat);
+          add(sea);
+          
+          Border border = BorderFactory.createTitledBorder("¸À");
+          setBorder(border);
+    }
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		if(e.getSource()==combo) {
+			temp1 = 10000;
+		}
+		if(e.getSource()==veget) {
+			temp1 = 11000;
+		}
+		if(e.getSource()==garden) {
+			temp1 = 12000;
+		}
+		if(e.getSource()==meat) {
+			temp1 = 13000;
+		}
+		if(e.getSource()==sea) {
+			temp1 = 15000;
+		}
+	}
+	
+	public static int getTem() {
+		return temp1;
+	}
+
+
+}
+ 

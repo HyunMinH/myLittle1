@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "smallestRouteTeam1:main.c">
+         <PersistentStrings>
+            <PersistentString
+               value = "team[1]">
+            </PersistentString>
+            <PersistentString
+               value = "team[0]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "main:main.c">
+         <PersistentStrings>
+            <PersistentString
+               value = "man.linkednum">
+            </PersistentString>
+            <PersistentString
+               value = "man.linkedwith[30]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "checkAtoB:main.c">
+         <PersistentStrings>
+            <PersistentString
+               value = "man[0]">
+            </PersistentString>
+            <PersistentString
+               value = "man[1]">
+            </PersistentString>
+            <PersistentString
+               value = "alrdyin[4]">
+            </PersistentString>
+            <PersistentString
+               value = "man[6]">
+            </PersistentString>
+            <PersistentString
+               value = "team[1]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "findRep:main.c">
+         <PersistentStrings>
+            <PersistentString
+               value = "team[0]">
+            </PersistentString>
+            <PersistentString
+               value = "team[1]">
+            </PersistentString>
+            <PersistentString
+               value = "team[2]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "scanLink:main.c">
+         <PersistentStrings>
+            <PersistentString
+               value = "man[1]">
+            </PersistentString>
+            <PersistentString
+               value = "man[3]">
+            </PersistentString>
+            <PersistentString
+               value = "man1">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

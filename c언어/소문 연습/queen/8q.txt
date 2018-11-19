@@ -1,0 +1,44 @@
+#include <stdio.h> 
+#include <stdlib.h>
+
+int x[8];
+
+void print ()
+{
+  int i,j;
+  printf ("+----------------+\n");
+  for (i=0; i<8; i++) {
+    printf ("|");
+    for (j=0; j<8; j++)
+      if (j==x[i]) printf ("X ");
+      else printf ("O ");
+    printf ("|\n");
+  }
+  printf ("+----------------+\n\n");
+}
+
+int a (int ix, int iy)
+{
+  int i;
+  for (i=0; i<iy; i++)
+    if ((x[i]==ix) || (abs(x[i]-ix)==abs(i-iy))) return 0;
+  return 1;
+}
+
+void tryed(int n)
+{
+  int i;
+  if (n==8) print();
+  else
+    for (i=0; i<8; i++)
+      if (a(i,n)) {
+        x[n]=i;
+        tryed(n+1);
+      }
+}
+
+int main ()
+{
+  tryed(0);
+  return 0;
+}

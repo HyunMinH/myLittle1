@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class SpaceShip {
+	public static void main(String args[]){
+		Scanner kbd = new Scanner(System.in);
+		
+		System.out.print("거리를 입력하세요:");
+		int destination = kbd.nextInt();
+		
+		kbd.close();
+		
+		System.out.println(calcNumberOfMovement(0, destination, 0));
+	}
+	
+	public static int calcNumberOfMovement(int cur, int des, int preDistance){
+		int moveNum, moveMin = 9999;
+		
+		if(cur > des-1)	return 9999;
+		else if(cur == des-1) return 2;
+		else if(cur <= 0) return 9999;
+		
+		for(int i = preDistance-1; i<=preDistance+1; i++){
+			moveNum = calcNumberOfMovement(cur+i, des, i);
+			
+			if(moveNum < moveMin)
+				moveMin = moveNum;
+		}
+		
+		return moveMin;
+	}
+}

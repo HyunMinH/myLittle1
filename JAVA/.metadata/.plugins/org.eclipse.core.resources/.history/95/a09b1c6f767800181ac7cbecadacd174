@@ -1,0 +1,56 @@
+import java.awt.GridLayout;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
+
+import javax.swing.BorderFactory;
+import javax.swing.ButtonGroup;
+import javax.swing.JPanel;
+import javax.swing.JRadioButton;
+import javax.swing.border.Border;
+
+public class SizePanel extends JPanel implements ItemListener{
+	private JRadioButton small, medium, large;
+	private static int temp2=0;
+
+    public SizePanel() {
+    	setLayout(new GridLayout(0,1));
+    	
+          small = new JRadioButton("Original", true);
+          medium = new JRadioButton("Premium");
+          large = new JRadioButton("Premium Special");
+
+          ButtonGroup size = new ButtonGroup();
+          size.add(small);
+          size.add(medium);
+          size.add(large);
+
+          small.addItemListener(this);
+          medium.addItemListener(this);
+          large.addItemListener(this);
+
+          add(small);
+          add(medium);
+          add(large);
+          
+          Border border = BorderFactory.createTitledBorder("Á¾·ù");
+          setBorder(border);
+    }
+
+	@Override
+	public void itemStateChanged(ItemEvent e) {
+		// TODO Auto-generated method stub
+		if(e.getItemSelectable()==small) {
+			temp2 = 0;
+		}
+		if(e.getItemSelectable()==medium) {
+			temp2 = 3000;
+		}
+		if(e.getItemSelectable()==large) {
+			temp2 = 5000;
+		}	
+	}
+    
+	public static int getTem() {
+		return temp2;
+	}
+} 

@@ -1,0 +1,49 @@
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+@SuppressWarnings("serial")
+public class MyFrame extends JFrame {
+  
+	public MyFrame() {
+		setSize(1000, 1000);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setTitle("MyFrame");
+  
+		JPanel panel = new JPanel();
+		JPanel panelA = new JPanel();
+		JPanel panelB = new JPanel();
+
+		
+		JLabel label1 = new JLabel("ÇÍÂ¥À’Â¥");
+		panelA.add(label1);
+		JButton button1 = new JButton(" Premium Special");
+		JButton button2 = new JButton("Premium");
+		JButton button3 = new JButton("Original");
+		
+		JLabel label2 = new JLabel("¸À");
+		panelB.add(button1);
+		panelB.add(button2);
+		panelB.add(button3);
+		panelB.add(label2);
+		JButton button4 = new JButton("Combination ");
+		JButton button5 = new JButton("Vegetarian");
+		JButton button6 = new JButton("Garden");
+		panelB.add(button4);
+		panelB.add(button5);
+		panelB.add(button6);
+		
+  
+//		JLabel label3 = new JLabel("°³¼ö");
+//		JTextField field1 = new JTextField(10);
+//		panelB.add(label3);
+//		panelB.add(field1);
+  
+		panel.add(panelA);
+		panel.add(panelB);
+		add(panel);
+		setVisible(true);
+  
+	}
+}

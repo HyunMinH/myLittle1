@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;자바 스윙 연습2/src/images/스크린샷 2017-05-29 오후 11.12.22.png&apos; to &apos;introBackGroundImage.png&apos;" description="Rename resource &apos;스크린샷 2017-05-29 오후 11.12.22.png&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/images/스크린샷 2017-05-29 오후 11.12.22.png" name="introBackGroundImage.png" stamp="1496071007012" updateReferences="true"/>
+</session>

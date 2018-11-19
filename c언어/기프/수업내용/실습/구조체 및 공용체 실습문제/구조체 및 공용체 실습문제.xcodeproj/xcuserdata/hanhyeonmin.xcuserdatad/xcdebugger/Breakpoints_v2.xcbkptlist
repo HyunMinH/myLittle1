@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x1100;&#x116e;&#x110c;&#x1169;&#x110e;&#x1166; &#x1106;&#x1175;&#x11be; &#x1100;&#x1169;&#x11bc;&#x110b;&#x116d;&#x11bc;&#x110e;&#x1166; &#x1109;&#x1175;&#x11af;&#x1109;&#x1173;&#x11b8;&#x1106;&#x116e;&#x11ab;&#x110c;&#x1166;/main.c"
+            timestampString = "500448822.185658"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "oneCar()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

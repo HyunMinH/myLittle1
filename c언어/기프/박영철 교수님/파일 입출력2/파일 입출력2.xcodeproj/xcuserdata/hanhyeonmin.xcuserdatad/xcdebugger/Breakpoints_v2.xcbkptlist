@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x1111;&#x1161;&#x110b;&#x1175;&#x11af; &#x110b;&#x1175;&#x11b8;&#x110e;&#x116e;&#x11af;&#x1105;&#x1167;&#x11a8;2/stdin.c"
+            timestampString = "501923674.909105"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
+            landmarkName = "insert()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x1111;&#x1161;&#x110b;&#x1175;&#x11af; &#x110b;&#x1175;&#x11b8;&#x110e;&#x116e;&#x11af;&#x1105;&#x1167;&#x11a8;2/main.c"
+            timestampString = "501858858.491343"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "8"
+            endingLineNumber = "8"
+            landmarkName = "main()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x1111;&#x1161;&#x110b;&#x1175;&#x11af; &#x110b;&#x1175;&#x11b8;&#x110e;&#x116e;&#x11af;&#x1105;&#x1167;&#x11a8;2/stdin.c"
+            timestampString = "501923674.909105"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
+            landmarkName = "insert()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x1111;&#x1161;&#x110b;&#x1175;&#x11af; &#x110b;&#x1175;&#x11b8;&#x110e;&#x116e;&#x11af;&#x1105;&#x1167;&#x11a8;2/main.c"
+            timestampString = "501858968.067709"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "main()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x1111;&#x1161;&#x110b;&#x1175;&#x11af; &#x110b;&#x1175;&#x11b8;&#x110e;&#x116e;&#x11af;&#x1105;&#x1167;&#x11a8;2/main.c"
+            timestampString = "501917039.565057"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "6"
+            endingLineNumber = "6"
+            landmarkName = "main()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x1111;&#x1161;&#x110b;&#x1175;&#x11af; &#x110b;&#x1175;&#x11b8;&#x110e;&#x116e;&#x11af;&#x1105;&#x1167;&#x11a8;2/stdin.c"
+            timestampString = "501923674.909105"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "187"
+            endingLineNumber = "187"
+            landmarkName = "scanLastNum()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x1111;&#x1161;&#x110b;&#x1175;&#x11af; &#x110b;&#x1175;&#x11b8;&#x110e;&#x116e;&#x11af;&#x1105;&#x1167;&#x11a8;2/stdin.c"
+            timestampString = "501923674.909105"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "136"
+            endingLineNumber = "136"
+            landmarkName = "lastnum()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x1111;&#x1161;&#x110b;&#x1175;&#x11af; &#x110b;&#x1175;&#x11b8;&#x110e;&#x116e;&#x11af;&#x1105;&#x1167;&#x11a8;2/stdin.c"
+            timestampString = "501922706.449539"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "fillfs()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x1111;&#x1161;&#x110b;&#x1175;&#x11af; &#x110b;&#x1175;&#x11b8;&#x110e;&#x116e;&#x11af;&#x1105;&#x1167;&#x11a8;2/stdin.c"
+            timestampString = "501922714.219742"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "6"
+            endingLineNumber = "6"
+            landmarkName = "createNode()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x1111;&#x1161;&#x110b;&#x1175;&#x11af; &#x110b;&#x1175;&#x11b8;&#x110e;&#x116e;&#x11af;&#x1105;&#x1167;&#x11a8;2/stdin.c"
+            timestampString = "501922716.854658"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "append()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x1111;&#x1161;&#x110b;&#x1175;&#x11af; &#x110b;&#x1175;&#x11b8;&#x110e;&#x116e;&#x11af;&#x1105;&#x1167;&#x11a8;2/stdout.c"
+            timestampString = "501923188.974201"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "5"
+            endingLineNumber = "5"
+            landmarkName = "stdoutAll()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x1111;&#x1161;&#x110b;&#x1175;&#x11af; &#x110b;&#x1175;&#x11b8;&#x110e;&#x116e;&#x11af;&#x1105;&#x1167;&#x11a8;2/stdin.c"
+            timestampString = "501923663.845275"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "fillfs()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x1111;&#x1161;&#x110b;&#x1175;&#x11af; &#x110b;&#x1175;&#x11b8;&#x110e;&#x116e;&#x11af;&#x1105;&#x1167;&#x11a8;2/main.c"
+            timestampString = "501924471.286558"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "7"
+            endingLineNumber = "7"
+            landmarkName = "main()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
